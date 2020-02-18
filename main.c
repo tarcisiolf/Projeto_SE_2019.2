@@ -18,6 +18,7 @@ K_MSGQ_DEFINE(my_msq, sizeof(int), 10, 4);
 //Configurando Semáforo
 K_SEM_DEFINE(var_sem, 1, 1);
 
+/*
 void button_pressed(struct device *gpiob, struct gpio_callback *cb, u32_t pins)
 {
     printk("Button 0 pressed!\n");
@@ -26,7 +27,9 @@ void button_pressed(struct device *gpiob, struct gpio_callback *cb, u32_t pins)
 
 // Jogar isso na main
 //button_create(&button0, BUTTON_DEVICE, BUTTON_PIN0, button0_callback);
+*/
 
+u8_t data = 0;
 
 void main(void)
 {
@@ -34,14 +37,14 @@ void main(void)
 	while (1)
 	{
 		k_sleep(K_SECONDS(1));
-		printk(".main %d\n, var", var);
+		printk(".main %d\n, var", data);
 	}
 	
 }
 
 void readThread(void)
 {
-	u8_t data = 0;
+	
 	printk("Hello readThread!\n");
 	
 	while (1)
@@ -50,6 +53,7 @@ void readThread(void)
 		printk(".thread 2: %d\n", data);
 
 		k_sem_take(&var_sem, K_FOREVER);
+		data += 10;
 		// escrever o valor da valor do sensor em algum local 
 		// e depois liberar o uso para o próxima thread
 		k_sem_give(&var_sem);		
@@ -64,8 +68,9 @@ void printThread(void)
 	while (1)
 	{
 		k_sem_take(&var_sem, K_FOREVER);
+		print("Dado ->%d\n", data);
 		// Printar o estado da máquina e o valor do sensor
-		k_sem_give(&var_sem, K_FOREVER);
+		k_sem_give(&var_sem);
 	}
 	
 }
