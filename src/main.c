@@ -41,8 +41,7 @@ static int cmd_run_press(const struct shell *shell, size_t argc, char **argv) {
             output_pressed(&led_zero);
             break;
         case '1':
-            output_pressed(&led_one);
-            
+            output_pressed(&led_one);         
             break;
         case '2':
             output_pressed(&led_two);
@@ -99,7 +98,7 @@ void readThread(void)
 		//printk(".thread 2: %d\n", data);
 
 		k_sem_take(&var_sem, K_FOREVER);
-		data += 10;
+		//data += 10;
 
 		// escrever o valor da valor do sensor em algum local 
 		// e depois liberar o uso para o próxima thread 
@@ -125,8 +124,7 @@ void buttonsThread(void)
 
         // LED Pisca indicando funcionamento normal
         if (pwm_pin_set_usec(pwm_dev, PWM_CHANNEL, PERIOD, (PERIOD/50) * step))
-        {
-            
+        {    
             printk("pwm pin set fails\n");
             return;
         }
