@@ -1,0 +1,34 @@
+zephyr/linker.cmd: \
+ /home/tarcisio/zephyrproject/zephyr/soc/arm/nordic_nrf/nrf52/linker.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/arch/arm/cortex_m/scripts/linker.ld \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/autoconf.h \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/sections.h \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/section_tags.h \
+ /home/tarcisio/zephyrproject/zephyr/include/toolchain.h \
+ /home/tarcisio/zephyrproject/zephyr/include/toolchain/gcc.h \
+ /home/tarcisio/zephyrproject/zephyr/include/generated_dts_board.h \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/generated_dts_board_unfixed.h \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/generated_dts_board_fixups.h \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/linker-defs.h \
+ /home/tarcisio/zephyrproject/zephyr/include/sys/util.h \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/offsets.h \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/linker-tool.h \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/linker-tool-gcc.h \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/rel-sections.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/priv_stacks-text.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/kobject-text.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/common-rom.ld \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/snippets-rodata.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/priv_stacks-rom.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/kobject-rom.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/cplusplus-rom.ld \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/snippets-ram-sections.ld \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/snippets-noinit.ld \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/snippets-rwdata.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/common-ram.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/priv_stacks.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/kobject.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/priv_stacks-noinit.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/cplusplus-ram.ld \
+ /home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/include/generated/snippets-sections.ld \
+ /home/tarcisio/zephyrproject/zephyr/include/linker/debug-sections.ld
