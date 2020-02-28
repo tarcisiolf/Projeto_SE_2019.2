@@ -34,10 +34,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/lib/libc/cmake_install.cmake")
-  include("/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/lib/posix/cmake_install.cmake")
-  include("/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/lib/gui/cmake_install.cmake")
-  include("/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/lib/os/cmake_install.cmake")
+  include("/home/tarcisio/zephyrproject/zephyr/dev/projeto/build/zephyr/lib/libc/cmake_install.cmake")
+  include("/home/tarcisio/zephyrproject/zephyr/dev/projeto/build/zephyr/lib/posix/cmake_install.cmake")
+  include("/home/tarcisio/zephyrproject/zephyr/dev/projeto/build/zephyr/lib/gui/cmake_install.cmake")
+  include("/home/tarcisio/zephyrproject/zephyr/dev/projeto/build/zephyr/lib/os/cmake_install.cmake")
 
 endif()
 

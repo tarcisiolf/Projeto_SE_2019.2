@@ -376,7 +376,7 @@ rule C_STATIC_LIBRARY_LINKER__kernel
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake -S/home/tarcisio/zephyrproject/zephyr/dev/project_dev -B/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build
+  command = /usr/bin/cmake -S/home/tarcisio/zephyrproject/zephyr/dev/projeto -B/home/tarcisio/zephyrproject/zephyr/dev/projeto/build
   description = Re-running CMake...
   generator = 1
 

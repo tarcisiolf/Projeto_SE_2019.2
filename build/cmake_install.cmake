@@ -1,4 +1,4 @@
-# Install script for directory: /home/tarcisio/zephyrproject/zephyr/dev/project_dev
+# Install script for directory: /home/tarcisio/zephyrproject/zephyr/dev/projeto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/zephyr/cmake_install.cmake")
+  include("/home/tarcisio/zephyrproject/zephyr/dev/projeto/build/zephyr/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tarcisio/zephyrproject/zephyr/dev/projeto/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -11,7 +11,7 @@
 /home/tarcisio/zephyrproject/zephyr/boards/arm/nrf52_pca10040/Kconfig
 /home/tarcisio/zephyrproject/zephyr/boards/arm/nrf52_pca10040/Kconfig.board
 /home/tarcisio/zephyrproject/zephyr/boards/arm/nrf52_pca10040/Kconfig.defconfig
-/home/tarcisio/zephyrproject/zephyr/dev/project_dev/build/Kconfig.modules
+/home/tarcisio/zephyrproject/zephyr/dev/projeto/build/Kconfig.modules
 /home/tarcisio/zephyrproject/zephyr/drivers/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/adc/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/adc/Kconfig.mcux

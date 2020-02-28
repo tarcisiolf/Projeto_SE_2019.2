@@ -6,11 +6,14 @@ project(atividade_2)
 
 list(APPEND HEADERS 
     "${PROJECT_SOURCE_DIR}/include"
+    "${PROJECT_SOURCE_DIR}/include/setup"
+    "${PROJECT_SOURCE_DIR}/include/input"
     "${PROJECT_SOURCE_DIR}/include/es_button"
     )
     
 list(APPEND SOURCES
     "${PROJECT_SOURCE_DIR}/src/main.c"
+    "${PROJECT_SOURCE_DIR}/src/input.c"
     "${PROJECT_SOURCE_DIR}/src/es_button.c"
 )
 include_directories(${HEADERS})
